@@ -1,0 +1,28 @@
+<h1 style="font-weight: bolder;">Todo-List</h1>
+
+<html>
+
+<head>
+
+    <style>
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        html, body{
+            /* font-family: cursive; */
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/insertData" method="post">
+        <input type="hidden" name="id" value="<%= single.id %>">
+        <input type="text" name="description" value="<%= single.description %>" placeholder="Add New Task...">
+        <input type="submit" name="submit" value="Add">
+    </form>
+
+</body>
+
+</html>

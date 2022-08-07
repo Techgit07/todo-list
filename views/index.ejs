@@ -1,0 +1,43 @@
+<h1 style="font-weight: bolder;">Todo-List</h1>
+
+<html>
+
+<head>
+    <title><%= title %></title>
+    <style>
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        html, body{
+            /* font-family: cursive; */
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/addData" method="post">
+        <input type="text" name="description" placeholder="Add New Task...">
+        <input type="submit" name="submit" value="Add">
+    </form>
+
+
+    <table border="" style="color: black;">
+        <tr style="color: white; text-align: center; background-color: black;">
+            <td>Your Task</td>
+            <td>Action</td>
+        </tr>
+        <% for (var key of data) { %>
+            <tr>
+                <td>
+                    <%= key.description %>
+                </td>
+                <td style="text-align: center;">  <a href="/deleteData/<%= key.id %>"> Remove </a> || <a href="/updatedata/<%= key.id %>">Edit</a></td>
+            </tr>
+        <% } %>
+    </table>
+
+</body>
+
+</html>
