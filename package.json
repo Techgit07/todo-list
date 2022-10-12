@@ -4,6 +4,24 @@
     "express": "^4.18.1",
     "mongodb": "^4.5.0",
     "mongoose": "^6.3.3",
-    "node": "^17.7.2"
-  }
+    "node": "^17.9.1"
+  },
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start":"node /index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Techgit07/To-do-List.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Techgit07/To-do-List/issues"
+  },
+  "homepage": "https://github.com/Techgit07/To-do-List#readme",
+  "description": ""
 }
