@@ -9,9 +9,12 @@
   "name": "to-do-list",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\"&& exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
